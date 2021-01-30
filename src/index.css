@@ -144,3 +144,7 @@ footer {
 footer p {
   font-size: smaller;
 }
+
+.navActive {
+  color: var(--primary);
+}

@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
+import { titleCase } from "../../utils/helper";
 
 function Nav(props) {
   const { pages = [], currentPage, setCurrentPage } = props;
 
   useEffect(() => {
-    document.title = currentPage.name;
+    document.title = titleCase(currentPage.name);
   }, [currentPage]);
 
   return (
@@ -15,7 +16,9 @@ function Nav(props) {
             className={`mx-2 ${currentPage.name === page.name && "navActive"}`}
             key={page.name}
           >
-            <span onClick={() => setCurrentPage(page)}>{page.name}</span>
+            <span onClick={() => setCurrentPage(page)}>
+              {titleCase(page.name)}
+            </span>
           </li>
         ))}
       </ul>
