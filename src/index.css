@@ -116,3 +116,7 @@ a:hover {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
 }
+
+.space-between {
+  justify-content: space-between;
+}
