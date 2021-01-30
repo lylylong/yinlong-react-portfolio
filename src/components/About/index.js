@@ -6,7 +6,7 @@ function About() {
       <div className="my-2">
         <h1>
           <a data-testid="link" href="/">
-            Yin Long Portfolio
+            About...
           </a>
         </h1>
       </div>

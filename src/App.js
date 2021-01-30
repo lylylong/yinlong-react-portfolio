@@ -27,7 +27,7 @@ function App() {
         ></Nav>
       </Header>
       <main>
-        <Page></Page>
+        <Page currentPage={currentPage}></Page>
       </main>
       <Footer></Footer>
     </div>

@@ -6,7 +6,7 @@ function Resume() {
       <div className="my-2">
         <h1>
           <a data-testid="link" href="/">
-            Yin Long Portfolio
+            Resume...
           </a>
         </h1>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
-function PageContent() {
+function PageContent(props) {
   return (
     <div>
-      <h2>Page Content</h2>
+      <h2>{props.children}</h2>
     </div>
   );
 }

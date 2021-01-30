@@ -6,10 +6,10 @@ import Contact from "../Contact";
 import Resume from "../Contact";
 import { titleCase } from "../../utils/helper";
 
-function Page(allPages) {
+function Page({ currentPage }) {
   // switch all pages
   const contentRender = () => {
-    switch (allPages) {
+    switch (currentPage.name) {
       case "about me":
         return <About />;
       case "portfolio":
@@ -25,7 +25,7 @@ function Page(allPages) {
 
   return (
     <section>
-      <h2>{titleCase("page title")}</h2>
+      <h2>{titleCase(currentPage.name)}</h2>
       <PageContent>{contentRender()}</PageContent>
     </section>
   );
