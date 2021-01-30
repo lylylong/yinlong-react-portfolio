@@ -1,8 +1,9 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 import React, { useState } from "react";
-import Nav from "./components/Nav";
 import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Page from "./components/Page";
 import Footer from "./components/Footer";
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
           setCurrentPage={setCurrentPage}
         ></Nav>
       </Header>
-      <main></main>
+      <main>
+        <Page></Page>
+      </main>
       <Footer></Footer>
     </div>
   );
