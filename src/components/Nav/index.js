@@ -12,7 +12,7 @@ function Nav(props) {
       <ul className="flex-row">
         {pages.map((page) => (
           <li
-            className={`mx-2 ${(currentPage.name = page.name && "navActive")}`}
+            className={`mx-2 ${currentPage.name === page.name && "navActive"}`}
             key={page.name}
           >
             <span onClick={() => setCurrentPage(page)}>{page.name}</span>
