@@ -18,6 +18,8 @@ function Page({ currentPage }) {
         return <Contact />;
       case "resume":
         return <Resume />;
+      default:
+        return <About />;
     }
   };
 

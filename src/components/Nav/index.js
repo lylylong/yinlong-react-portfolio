@@ -5,7 +5,7 @@ function Nav(props) {
   const { pages = [], currentPage, setCurrentPage } = props;
 
   useEffect(() => {
-    document.title = titleCase(currentPage.name);
+    document.title = "Yin - " + titleCase(currentPage.name);
   }, [currentPage]);
 
   return (
