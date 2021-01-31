@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helper";
+require("default-passive-events");
 
 function Contact() {
   const [formState, setFormState] = useState({
@@ -14,15 +15,23 @@ function Contact() {
   // the contact info that the user sent
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    document.addEventListener("mousewheel", onMousewheel, true);
+    document.addEventListener("touchmove", onTouchmove, true);
     if (!errorMessage) {
       setFormState({ [event.target.name]: event.target.value });
       console.log("Form Send", formState);
+      document.getElementById("contact-form").reset();
+
+      document.querySelector('textarea[name="message"]').value = "";
+      setErrorMessage("Thank you for your message!");
+      return;
     }
-
-    document.getElementById("contact-form").reset();
-
-    setErrorMessage("Thank you for your message!");
+    if (errorMessage) {
+      document.getElementById("contact-form").reset();
+      document.querySelector('textarea[name="message"]').value = "";
+      setErrorMessage("no!");
+      return;
+    }
   };
 
   // when user is typing and may receive feedback based on their inputs
@@ -49,34 +58,35 @@ function Contact() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <div className="form-group">
+          <label htmlFor="name">Your Name:</label>
           <input
+            className="form-control"
             type="text"
             name="name"
             defaultValue={name}
             onBlur={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className="form-group">
+          <label htmlFor="email">Your Email address:</label>
           <input
+            className="form-control"
             type="email"
             name="email"
             defaultValue={email}
             onBlur={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        <div className="form-group">
+          <label htmlFor="message">Your Message:</label>
           <textarea
+            className="big-input form-control"
             name="message"
             defaultValue={message}
             onBlur={handleChange}
-            rows="5"
-            className="big-input"
+            rows="3"
           />
         </div>
         {errorMessage && (
@@ -85,7 +95,9 @@ function Contact() {
           </div>
         )}
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn mb-5">
+          Submit
+        </button>
       </form>
     </section>
   );

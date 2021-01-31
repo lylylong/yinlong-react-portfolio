@@ -9,11 +9,29 @@ function Project({ project }) {
         alt={name}
         className="project-img"
       />
-      <div className="project-detail">
-        <h3>
-          <a href={link}>link to be here...</a>
-          <a href={repo}>repo to be here...</a>
-        </h3>
+      <div className="project-detail text-left">
+        <p>
+          <i className="fas fa-globe"></i>
+          <a
+            className="project-info"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            URL{" "}
+          </a>
+          <i className="fab fa-github"></i>
+          <a
+            className="project-info"
+            href={repo}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Repo
+          </a>
+        </p>
         <p>{description}</p>
       </div>
     </div>

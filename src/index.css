@@ -105,11 +105,11 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
+/*
 a:hover {
   text-decoration: underline;
 }
-
+*/
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +190,7 @@ footer p {
 .project-img {
   height: 160px;
   width: 225px;
-  margin: 15px;
+  margin: 15px 0;
 }
 .row {
   margin: 20px 50px;
@@ -212,4 +212,11 @@ footer p {
 }
 .resume-btn {
   padding: 0;
+}
+.project-info {
+  color: #000000;
+  margin-right: 30px;
+}
+label {
+  font-size: 1.2rem;
 }
