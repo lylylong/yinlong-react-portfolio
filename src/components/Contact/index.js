@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { validateEmail } from "../../utils/helper";
 
 function Contact() {
@@ -12,14 +11,21 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
 
+  // the contact info that the user sent
   const handleSubmit = (event) => {
     event.preventDefault();
+
     if (!errorMessage) {
       setFormState({ [event.target.name]: event.target.value });
-      console.log("Form", formState);
+      console.log("Form Send", formState);
     }
+
+    document.getElementById("contact-form").reset();
+
+    setErrorMessage("Thank you for your message!");
   };
 
+  // when user is typing and may receive feedback based on their inputs
   const handleChange = (event) => {
     if (event.target.name === "email") {
       const isValid = validateEmail(event.target.value);
@@ -34,6 +40,10 @@ function Contact() {
       } else {
         setErrorMessage("");
       }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [event.target.name]: event.target.value });
+      // console.log("Form feedback:", formState);
     }
   };
 
@@ -63,19 +73,19 @@ function Contact() {
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
-            rows="5"
             defaultValue={message}
             onBlur={handleChange}
+            rows="5"
+            className="big-input"
           />
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text my-2">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
-          Submit
-        </button>
+
+        <button type="submit">Submit</button>
       </form>
     </section>
   );
