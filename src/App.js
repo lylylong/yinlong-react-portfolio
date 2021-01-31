@@ -18,7 +18,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div className="App">
+    <div className="container-flood">
       <Header>
         <Nav
           pages={pages}

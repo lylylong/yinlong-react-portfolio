@@ -3,9 +3,9 @@ import React from "react";
 function Project({ project }) {
   const { name, description, link, repo } = project;
   return (
-    <div className="project" key={name}>
+    <div className="project col-lg-4 col-sm-6" key={name}>
       <img
-        src={require(`../../assets/projects/expense-tracker.jpg`).default}
+        src={require(`../../assets/projects/${name}.jpg`).default}
         alt={name}
         className="project-img"
       />

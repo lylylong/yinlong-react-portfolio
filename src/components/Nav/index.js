@@ -9,7 +9,7 @@ function Nav(props) {
   }, [currentPage]);
 
   return (
-    <nav>
+    <nav className="nav-scroller py-1 nav-bar">
       <ul className="flex-row">
         {pages.map((page) => (
           <li

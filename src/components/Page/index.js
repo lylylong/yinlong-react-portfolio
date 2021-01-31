@@ -27,7 +27,7 @@ function Page({ currentPage }) {
 
   return (
     <section>
-      <h2>{titleCase(currentPage.name)}</h2>
+      <h2 className="mb-5">{titleCase(currentPage.name)}</h2>
       <PageContent>{contentRender()}</PageContent>
     </section>
   );
