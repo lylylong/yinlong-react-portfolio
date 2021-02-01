@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/yinlong-react-portfolio/static/css/main.87267ea6.chunk.css",
+    "main.js": "/yinlong-react-portfolio/static/js/main.24f2b9e4.chunk.js",
+    "main.js.map": "/yinlong-react-portfolio/static/js/main.24f2b9e4.chunk.js.map",
+    "runtime-main.js": "/yinlong-react-portfolio/static/js/runtime-main.71ca66e6.js",
+    "runtime-main.js.map": "/yinlong-react-portfolio/static/js/runtime-main.71ca66e6.js.map",
+    "static/js/2.4f14dcaf.chunk.js": "/yinlong-react-portfolio/static/js/2.4f14dcaf.chunk.js",
+    "static/js/2.4f14dcaf.chunk.js.map": "/yinlong-react-portfolio/static/js/2.4f14dcaf.chunk.js.map",
+    "static/js/3.3e3979c2.chunk.js": "/yinlong-react-portfolio/static/js/3.3e3979c2.chunk.js",
+    "static/js/3.3e3979c2.chunk.js.map": "/yinlong-react-portfolio/static/js/3.3e3979c2.chunk.js.map",
+    "index.html": "/yinlong-react-portfolio/index.html",
+    "static/css/main.87267ea6.chunk.css.map": "/yinlong-react-portfolio/static/css/main.87267ea6.chunk.css.map",
+    "static/js/2.4f14dcaf.chunk.js.LICENSE.txt": "/yinlong-react-portfolio/static/js/2.4f14dcaf.chunk.js.LICENSE.txt",
+    "static/media/COVID-19-Tracker.jpg": "/yinlong-react-portfolio/static/media/COVID-19-Tracker.e51f4f16.jpg",
+    "static/media/cake-app.jpg": "/yinlong-react-portfolio/static/media/cake-app.9e0c53e6.jpg",
+    "static/media/expense-tracker.jpg": "/yinlong-react-portfolio/static/media/expense-tracker.ca5f7bc1.jpg",
+    "static/media/my-weather-channel.jpg": "/yinlong-react-portfolio/static/media/my-weather-channel.b3ffb892.jpg",
+    "static/media/quick-notes.jpg": "/yinlong-react-portfolio/static/media/quick-notes.4b251ef5.jpg",
+    "static/media/work-time-planner.jpg": "/yinlong-react-portfolio/static/media/work-time-planner.83a224f2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71ca66e6.js",
+    "static/js/2.4f14dcaf.chunk.js",
+    "static/css/main.87267ea6.chunk.css",
+    "static/js/main.24f2b9e4.chunk.js"
+  ]
+}
