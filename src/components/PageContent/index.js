@@ -1,5 +1,5 @@
 import React from "react";
-
+// this is a container to display different pages
 function PageContent(props) {
   return (
     <div>

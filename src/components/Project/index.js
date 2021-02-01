@@ -1,9 +1,11 @@
 import React from "react";
-
+import { titleCaseRemoveHyphen } from "../../utils/helper";
+// each project
 function Project({ project }) {
   const { name, description, link, repo } = project;
   return (
     <div className="project col-lg-4 col-sm-6" key={name}>
+      <p className="mt-3 project-title">{titleCaseRemoveHyphen(name)}</p>
       <img
         src={require(`../../assets/projects/${name}.jpg`).default}
         alt={name}
@@ -32,7 +34,7 @@ function Project({ project }) {
             Repo
           </a>
         </p>
-        <p>{description}</p>
+        <p className="project-description">{description}</p>
       </div>
     </div>
   );

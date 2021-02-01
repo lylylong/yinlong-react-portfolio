@@ -23,8 +23,6 @@ function Page({ currentPage }) {
     }
   };
 
-  // {contentRender()}
-
   return (
     <section>
       <h2 className="mb-3">{titleCase(currentPage.name)}</h2>

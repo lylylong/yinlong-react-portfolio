@@ -1,5 +1,5 @@
 import React from "react";
-
+// the header is on everypage
 function Header(props) {
   return (
     <header className="flex-row px-1 space-between blog-header py-3 app-header">

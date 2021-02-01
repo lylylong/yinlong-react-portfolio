@@ -1,5 +1,5 @@
 import React from "react";
-
+// resume page
 function Resume() {
   return (
     <section className="row resume-box">

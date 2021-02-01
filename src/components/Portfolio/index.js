@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Project from "../Project";
 
 function Portfolio() {
+  // all projects
   const [projects] = useState([
     {
       name: "cake-app",
-      description: "Model-View-Controller (MVC) Project",
+      description: "Model-View-Controller Project",
       link: "https://cake-lab-app.herokuapp.com/",
       repo: "https://github.com/lylylong/cake-app",
     },

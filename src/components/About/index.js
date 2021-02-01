@@ -1,5 +1,5 @@
 import React from "react";
-
+// the default/home page
 function About() {
   return (
     <section className="my-5">

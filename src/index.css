@@ -18,13 +18,9 @@ main {
   padding: 50px 30px 0 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #f3a847;
-  --tertiary: #b12704;
-  --light: #fafafa;
+  --light: #e2dede;
   --dark: #000000;
   --darker: #111111;
-  --error: rgb(228, 46, 1);
   --teal: #20c997;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -101,7 +97,7 @@ p {
 }
 
 a {
-  color: var(--light);
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -190,7 +186,7 @@ footer p {
 .project-img {
   height: 160px;
   width: 225px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 .row {
   margin: 20px 50px;
@@ -219,4 +215,11 @@ footer p {
 }
 label {
   font-size: 1.2rem;
+}
+.project-description {
+  font-size: 0.9rem;
+}
+.project-title {
+  font-weight: 900;
+  color: #20c997;
 }

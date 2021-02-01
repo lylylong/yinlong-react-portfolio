@@ -1,5 +1,5 @@
 import React from "react";
-
+// the footer is on everypage
 function Footer() {
   return (
     <footer className="flex-row px-1">

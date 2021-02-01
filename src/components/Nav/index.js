@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { titleCase } from "../../utils/helper";
-
+// the nav is on everypage
 function Nav(props) {
+  // use props
   const { pages = [], currentPage, setCurrentPage } = props;
-
+  // change the title name when stwiching the page
   useEffect(() => {
     document.title = "Yin - " + titleCase(currentPage.name);
   }, [currentPage]);

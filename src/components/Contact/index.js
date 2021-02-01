@@ -1,35 +1,40 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helper";
-require("default-passive-events");
 
 function Contact() {
+  // set form state
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
   });
-
+  // set initial error state
   const [errorMessage, setErrorMessage] = useState("");
+  // the initial form state
   const { name, email, message } = formState;
 
   // the contact info that the user sent
   const handleSubmit = (event) => {
+    // preventDefault is not working in React...
     event.preventDefault();
-    document.addEventListener("mousewheel", onMousewheel, true);
-    document.addEventListener("touchmove", onTouchmove, true);
+    // if no error message
     if (!errorMessage) {
       setFormState({ [event.target.name]: event.target.value });
       console.log("Form Send", formState);
+      // cause preventDefault is not working in React, have to reset the form again
       document.getElementById("contact-form").reset();
-
       document.querySelector('textarea[name="message"]').value = "";
+      // display a successful message
       setErrorMessage("Thank you for your message!");
       return;
     }
+    // if there is error message
     if (errorMessage) {
+      // display a failed message
+      setErrorMessage("Your contact info is NOT sent!");
+      // cause preventDefault is not working in React, have to reset the form again
       document.getElementById("contact-form").reset();
       document.querySelector('textarea[name="message"]').value = "";
-      setErrorMessage("no!");
       return;
     }
   };
@@ -52,7 +57,6 @@ function Contact() {
     }
     if (!errorMessage) {
       setFormState({ ...formState, [event.target.name]: event.target.value });
-      // console.log("Form feedback:", formState);
     }
   };
 
