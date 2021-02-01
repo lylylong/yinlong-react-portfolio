@@ -16,7 +16,7 @@ This is my single-page application portfolio. Let's me walk you through this Rea
 
 ## Deployed Application
 
-TBA
+https://lylylong.github.io/yinlong-react-portfolio
 
 ## GitHub URL
 
