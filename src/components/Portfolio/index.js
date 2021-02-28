@@ -5,6 +5,12 @@ function Portfolio() {
   // all projects
   const [projects] = useState([
     {
+      name: "moviegoer",
+      description: "MERN stack/PWA/SPA Project",
+      link: "https://moviegoer-2021.herokuapp.com/",
+      repo: "https://github.com/lylylong/moviegoer.git",
+    },
+    {
       name: "cake-app",
       description: "Model-View-Controller Project",
       link: "https://cake-lab-app.herokuapp.com/",
@@ -21,12 +27,6 @@ function Portfolio() {
       description: "JaveScript/CSS/HTML Project",
       link: "https://lylylong.github.io/work-time-planner/",
       repo: "https://github.com/lylylong/work-time-planner.git",
-    },
-    {
-      name: "quick-notes",
-      description: "JaveScript/CSS/HTML Project",
-      link: "https://quick-notes-2020.herokuapp.com/",
-      repo: "https://github.com/lylylong/quick-notes.git",
     },
     {
       name: "expense-tracker",
