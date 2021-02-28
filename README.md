@@ -34,12 +34,6 @@ Single Page Applications, or SPA, interacts with the browser and re-render the c
 - JavaScript
 - font-awesome
 
-## Screenshots
-
-The screenshots demonstrate the user experience:
-
-![react-portfolio](https://user-images.githubusercontent.com/70302749/106408897-5d717080-640d-11eb-9077-1c312f343d74.gif)
-
 ## Contributor
 
 - lylylong
@@ -51,3 +45,9 @@ https://github.com/lylylong
 
 If you have any questions, please send me emails:
 lylylong@gmail.com
+
+## Screenshots
+
+The screenshots demonstrate the user experience:
+
+![new portfolio](https://user-images.githubusercontent.com/70302749/109408288-f71d3680-7955-11eb-91a0-020d913ada64.gif)
